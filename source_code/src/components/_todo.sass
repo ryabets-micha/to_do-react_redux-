@@ -1,0 +1,36 @@
+body
+  width: 100%
+  min-height: 100vh
+  background-color: #282c34
+
+#root
+  +wrapper()
+  width: 100%
+  min-height: 100vh
+
+.todo-header
+  +row-flex()
+  width: 90%
+  margin: 20px auto 30px
+  height: 90px
+  box-shadow: 0 0 40px rgba(255, 255, 255, .8)
+  border-radius: 15px
+  +md(width, 98%)
+
+.todo-title
+  +col()
+  +size(12)
+  text-align: center
+  font-size: 48px
+  line-height: 90px
+  color: #fff
+  font-weight: bold
+  text-shadow: 0 0 40px rgba(255, 255, 255, .8)
+
+.todo-body
+  +row-flex()
+  padding: 20px 100px
+  +md(padding, 20px 5%)
+  +xs-block
+    padding: 8px 0
+    justify-content: center

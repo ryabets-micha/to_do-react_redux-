@@ -1,0 +1,25 @@
+.add-link
+  +col()
+  +size(3)
+  +size-lg(4)
+  +size-sm(6)
+  +size-xs(10)
+  border: 1px dashed #fff
+  min-height: 90px
+  margin-bottom: 30px
+  border-radius: 20px
+  box-shadow: 0 0 40px rgba(255, 255, 255, .3)
+  overflow: hidden
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  +xs(height, 90px)
+  &:hover
+    .plus
+      opacity: 1
+
+.plus
+  width: 70px
+  opacity: .6
+  transition: opacity .25s

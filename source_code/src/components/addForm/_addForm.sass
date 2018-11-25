@@ -1,0 +1,68 @@
+.addForm-box
+  +row-flex()
+  width: 100%
+  min-height: 100vh
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.addForm-big-title
+  font-size: 40px
+  font-weight: bold
+  line-height: 60px
+  margin-top: -60px
+  color: #fff
+
+.addForm-item
+  position: relative
+  width: 280px
+  display: flex
+  flex-direction: column
+  padding: 10px
+  background-color: #c4c4c4
+  border-radius: 6px
+  &>input
+    width: 100%
+    border-radius: 6px
+    outline: none
+    border: none
+    padding: 5px
+  &>textarea
+    width: 100%
+    border-radius: 6px
+    outline: none
+    border: none
+    padding: 8px
+    margin-top: 20px
+    resize: none
+
+.addForm-btn
+  margin-top: 10px
+  display: flex
+  justify-content: center
+  
+  button
+    width: 180px
+    height: 30px
+    border: none
+    border-radius: 6px
+    background-color: #fff
+    &:hover
+      cursor: pointer
+      background-color: rgba(9, 58, 234, .2)
+    &:focus
+      outline: none
+
+.title-limit
+  position: absolute
+  top: 15px
+  right: 20px
+  font-size: 15px
+  color: #c4c4c4
+
+.description-limit
+  position: absolute
+  bottom: 55px
+  right: 20px
+  font-size: 15px
+  color: #c4c4c4
